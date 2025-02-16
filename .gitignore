@@ -1,0 +1,5 @@
+__pycache__/
+songs/
+diffusion_frames/
+wav2vec2_checkpoints/
+old_ipynb/
