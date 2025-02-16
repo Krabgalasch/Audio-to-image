@@ -72,7 +72,7 @@ def plot_mel_spectrogram(audio_file, n_mels=128):
     # Plot the spectrogram and include the detected emotion in the title.
     plt.figure(figsize=(10, 4))
     librosa.display.specshow(S_dB, sr=sr, x_axis='time', y_axis='mel')
-    plt.title(f"Mel-frequency Spectrogram (Detected emotion: {emotion})")
+    plt.title(f"{audio_file} (Detected emotion: {emotion})")
     plt.colorbar(format='%+2.0f dB')
     plt.tight_layout()
     plt.show()
