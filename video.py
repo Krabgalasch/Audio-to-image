@@ -2,7 +2,6 @@ import warnings
 from diffusers import StableDiffusionPipeline, DDIMScheduler
 import torch
 import cv2
-import os
 import numpy as np
 import textwrap
 

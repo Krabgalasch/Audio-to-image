@@ -25,8 +25,6 @@ def detect_emotion(phrase, audio_tensor, sample_rate, classifier):
         segment = segment.mean(dim=0, keepdim=True)
 
     # Save the segment to a temporary WAV file
-    import tempfile
-
     with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
         temp_filename = tmp.name
     torchaudio.save(temp_filename, segment, sample_rate)
